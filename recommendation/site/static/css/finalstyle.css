@@ -1,0 +1,18 @@
+body{
+    background-color: burlywood;
+    background-size: 80%;
+    font-family: 'Carattere';font-size: 22px;   
+}
+p{
+    text-align: center;
+    font-size: xx-large;
+}
+h1{
+    color: black;
+    font-size:medium;
+}
+h2{
+    color: black;
+    text-align: center;
+    font-size: medium;
+}

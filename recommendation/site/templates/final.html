@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MOVIES</title>
+        <link rel="stylesheet" href="../static/css/finalstyle.css">
+    </head>
+    <body>
+        {% for output in data %}
+            <h1>Title: </h1>
+            <h2>{{output[0]}}</h2>
+            <br>
+            <h1>Year: </h1>
+            <h2>{{output[1]}}</h2>
+            <br>
+            <h1>Director: </h1>
+            <h2>{{output[2]}}</h2>
+            <br>
+            <h1>Synopsis: </h1>
+            <h2>{{output[3]}}</h2>
+            <br>
+            <h1>Cast: </h1>
+            <h2>{{output[4]}}</h2>
+            <br>
+            <h1>Studios: </h1>
+            <h2>{{output[5]}}</h2>
+            <br>
+            <h1>Country: </h1>
+            <h2>{{output[6]}}</h2>
+            <br>
+            <h1>Origin: </h1>
+            <h2>{{output[7]}}</h2>
+            <br>
+            <h1>Language: </h1>
+            <h2>{{output[8]}}</h2>
+            <br>
+            <h1>Genres: </h1>
+            <h2>{{output[9]}}</h2>
+            <br>
+            <h1>Themes: </h1>
+            <h2>{{output[10]}}</h2>
+            <p>---------------------------------------------------------------------------------------------------------------------</p>
+            <br>
+        {% endfor %}
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOLLYSUGGESTS</title>
+    <link href='https://fonts.googleapis.com/css?family=Carattere' rel='stylesheet'>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <h1><span>Get Your Movies Here!!</span></h1>
+    <br>
+    <form action="/submit" method="post">
+        <h3><span>Genres: </span></h3>
+        <select name="GENRES" multiple>
+            <option value="action">action</option>      
+            <option value="adventure">adventure</option>
+            <option value="animation">animation</option>
+            <option value="comedy">comedy</option>
+            <option value="crime">crime</option>
+            <option value="documentary">documentary</option>
+            <option value="drama">drama</option>
+            <option value="family">family</option>
+            <option value="fantasy">fantasy</option>
+            <option value="history">history</option>
+            <option value="horror">horror</option>
+            <option value="music">music</option>
+            <option value="mystery">mystery</option>
+            <option value="romance">romance</option>
+            <option value="science fiction">science fiction</option>
+            <option value="thriller">thriller</option>
+            <option value="tv movie">tv movie</option>
+            <option value="war">war</option>
+            <option value="western">western</option>
+        </select>
+        <p><span>down the Ctrl (windows) /
+            Command (Mac) button to select multiple options.</span><p>
+            <h3><span>Enter Director's name: </span></h3><input type="text" name="DIRECTOR">
+        <br>
+            <h2><span>Make sure you enter the full names :) </span></h2>
+            <h3><span>Enter actor's name: </span></h3><input type="text" name="ACTORS">
+        <br>
+            <h3><span>Enter year of release: </span></h3><input type="text" name="YEAR">
+        <br>
+            <h3><span>Enter Studios: </span></h3><input type="text" name="STUDIOS">
+        <br>
+            <h3><span>Enter any additional themes: </span></h3><input type="text" name="THEMES">
+        <br><br>
+        <input type="submit" name="submit">
+        {% if has_next %}
+        <a href="{{ url_for('submit', page= page+1) }}">Next Page</a>
+        {% endif %}
+</body>
+</html>

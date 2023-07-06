@@ -1,0 +1,67 @@
+body{
+    text-align: center;
+    background-image: url("../images/posters.jpg");
+    background-size: 80%;
+    font-family: 'Carattere';font-size: 22px;    
+}
+p span{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:burlywood;
+    opacity: 0.75;
+    color:black;
+    font-size: small;
+    text-align: center;
+}
+h3 span{
+    margin: auto;
+    position: relative;
+    color:bisque;
+    background-color:burlywood;
+    text-align: center;
+    padding: 1%;
+    border-radius: 50%;
+    text-shadow: 0 0 3px brown, 0 0 5px black;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.6));
+    display: inline-block;
+}
+h1 span{
+    color: brown;
+    text-align: center;
+    background-color: burlywood;
+    padding: 1%;
+    border-radius: 50%;
+    text-shadow: 0 0 3px wheat, 0 0 5px dimgrey;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    display: inline-block;
+}
+h2{
+    color: brown;
+    text-align: center;
+    background-color: burlywood;
+    padding: 1%;
+    border-radius: 50%;
+    text-shadow: 0 0 3px wheat, 0 0 5px dimgrey;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    display: inline-block;
+}
+select{
+    width: 150px;
+}
+input{
+    background-color:bisque;
+    color: black;
+    font: optional;
+    font-size: large;
+    font-family: 'Carattere';
+    font-weight:bolder;
+}
+option{
+    background-color: bisque;
+    color: black;
+    font: optional;
+    font-size: large;
+    font-family: 'Carattere';
+    font-weight:bolder;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
