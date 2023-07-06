@@ -3,7 +3,7 @@ from thefuzz import fuzz
 from collections import Counter
 import os
 
-file_path = os.path.abspath(r"C:\Users\karth\OneDrive\Desktop\recommendation\site\Telugu.csv")
+file_path = os.path.abspath(r"recommendation/site/Telugu.csv")
 file = open(file_path, encoding='utf8')
 info = file.read()
 info = info.replace('\n','\t')
